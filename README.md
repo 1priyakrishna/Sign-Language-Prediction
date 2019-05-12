@@ -34,10 +34,24 @@ Put your hand in those squares. Make sure your hand covers all the squares.
 Press 'c'. Another window will appear named "Thresh".
 On pressing 'c' only white patches corresponding to the parts of the image which has your skin color should appear on the "Thresh" window.
 Make sure all the squares are covered by your hand.
-In case you are not successful then move your hand a little bit and press 'c' again. Repeat this until you get a good histogram.
-After you get a good histogram press 's' to save the histogtraining can be done with either Tensorflow or Keras. If you want to train using Tensorflow then run the cnn_tf.py file. If you want to train using Keras then use the cnn_keras.py file.
-python cnn_tf.py
-python cnn_keras.pyram. All the windows close.
+In case if that didn't work, then move your hand a little bit and press 'c' again. Repeat this until you get a good histogram.
+After you get a good histogram press 's' to save the histogram. All the windows close.
+
+We already have 44 gestures. If you want to add gestures, use the instruction below:
+```
+python create_gestures.py
+```
+On executing the above intruction, you will have to enter your gesture number and give it a name. Then a window name "Capturing gestures", in which you will find a green box, in which you will have to capture your gestures. And a counter will make a count on number of gestures stored. Press 'c' when you are ready with your gesture. Capturing gesture will begin after a few seconds. Move your hand a little bit here and there. You can pause capturing by pressing 'c' and resume it by pressing 'c'. Capturing resumes after a few secondAfter the counter reaches 1200 the window will close automatically. 
+
+Now, after capturing the gestures, you need to flip the images using instruction below:
+```
+python flip_images.py
+```
+
+Now, you need to load the images using the instruction below:
+```
+python load_images.py
+```
 
 # Displaying the gestures
 To see all the gestures that are stored in 'gestures/' folder run this command
