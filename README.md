@@ -1,6 +1,6 @@
 # Sign Language Prediction
 Sign language prediction using CNN
-There is a need of a method or an application that can recognize sign language gestures so that the communication is possible even if someone does not understand sign language. With this work, we intend to take a basic step in bridging this communication gap using Sign Language Recognition.
+There is a need for a method or an application that can recognize sign language gestures so that the communication is possible even if someone does not understand sign language. With this work, we intend to take a basic step in bridging this communication gap using Sign Language Recognition.
 
 # A quick sneak-peak into what was done
 1.Firstly, we've created 44 gesture samples using OpenCV, in which,for each gesture we've captured 1200 images each of 50x50 pixels.All theses images were in grayscale which is stored in the gestures/ folder. The pictures were flipped using flip_images.py. This script flips every image along the vertical axis. Hence each gesture has 2400 images.
