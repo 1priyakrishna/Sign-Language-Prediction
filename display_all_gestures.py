@@ -35,7 +35,7 @@ for i in range(rows):
 		full_img = col_img
 	else:
 		full_img = np.vstack((full_img, col_img))
-
+print(end_index)
 
 cv2.imshow("gestures", full_img)
 cv2.imwrite('full_img.jpg', full_img)
